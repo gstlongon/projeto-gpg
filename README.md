@@ -1,6 +1,6 @@
 # Projeto GPG
 # Desenvolvedores #
-1- Gustavo Lourenço
+1- Gustavo Lourenço <br>
 2- Gustavo Longon
 3- Paulo Targa
 4- Fellipe Augusto

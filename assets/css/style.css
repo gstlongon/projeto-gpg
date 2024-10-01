@@ -426,13 +426,140 @@ img.index__top-img {
     font-weight: 400;
 }
 
+.index__promotion {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 50px auto 0;
+    padding: 100px 0 80px;
+    border-radius: 30px;
+    color: #FFF;        
+    background: linear-gradient(to right, #548CAD, #97C4D8);
+    position: relative;
+}
 
+.index__promotion-texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.index__promotion-content {
+    width: 100%;
+    position: relative;
+}
+
+.timer {
+    width: 550px;
+    height: 248px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -275px; /* metade da largura */
+    margin-top: -124px; /* metade da altura */
+    color: white;
+    cursor: default;
+  }
+  
+  .timer h3 {
+    width: 100%;
+    font-size: 26px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+  
+  .timer--clock {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-left: 6px;
+    margin-top: 22px;
+    overflow: hidden;
+  }
+  
+  .timer--clock .clock-display-grp {
+    min-height: 150px;
+    max-width: max-content;
+    position: relative;
+  }
+
+  .number-label {
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+  .timer--clock .clock-display-grp .number-grp {
+    width: auto;
+    display: block;
+    height: 156px;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .timer--clock .clock-display-grp .number-grp .number-grp-wrp {
+    width: 100%;
+    position: relative;
+  }
+  
+  .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num {
+    width: 100%;
+    position: relative;
+    height: 156px;
+    margin-bottom: 20px;
+  }
+  
+  .timer--clock .clock-display-grp .number-grp .number-grp-wrp .num p {
+    width: auto;
+    display: table;
+    font-size: 127px;
+    font-weight: 500;
+    line-height: 150px;
+  }
+  
+  .timer--clock .clock-separator {
+    width: auto;
+    margin: 0 40px;
+    float: left;
+    display: block;
+    height: 156px;
+  }
+  
+  .timer--clock .clock-separator p {
+    width: auto;
+    display: table;
+    font-size: 127px;
+    line-height: 150px;
+    font-weight: bold;
+  }
+
+  .index__promotion-btn {
+    margin: 25px 0 15px;
+  }
+
+  .index__promotion-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+
+  
+
+  
+
+
+  
 
 /* ======= FOOTER ======== */
 
 footer {
+    width: calc(100% - 40px);
     background-color: #000;
     color: #fff;
+    margin: 50px auto 0;
+    border-radius: 30px;
     padding: 40px 50px;
     display: flex;
     justify-content: space-between;
@@ -509,10 +636,21 @@ footer {
     margin: 0 5px;
     text-decoration: none;
 }
+
+
+.footer-logo-box {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
 .footer-logo {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+   width: 100%;
+   max-width: 1220px;
+   margin: 0 auto; 
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   top: 75px;
 }

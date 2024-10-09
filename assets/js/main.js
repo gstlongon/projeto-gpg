@@ -110,6 +110,43 @@ class Main {
             setTimeout(updateTimer, 1000);
         }
     }
+
+    changeProduct() {
+        const btnRed = document.querySelector('.red')
+        const btnPink = document.querySelector('.pink')
+        const bgRed = document.querySelector('.index__change-bg-red')
+        const bgPink = document.querySelector('.index__change-bg-pink')
+        const productRed = document.querySelector('.index__change-img-red')
+        const productPink = document.querySelector('.index__change-img-pink')
+
+        btnRed.addEventListener('click', () => {
+            btnRed.classList.add('active')
+            bgRed.classList.add('active')
+            setTimeout(() => {
+                productRed.classList.add('active')
+
+            }, 300)
+
+            btnPink.classList.remove('active')
+            bgPink.classList.remove('active')
+            productPink.classList.remove('active')
+        })
+
+        btnPink.addEventListener('click', () => {
+            btnPink.classList.add('active')
+            bgPink.classList.add('active')
+            setTimeout(() => {
+                productPink.classList.add('active')
+
+            }, 300)
+
+            btnRed.classList.remove('active')
+            bgRed.classList.remove('active')
+            productRed.classList.remove('active')
+        })
+
+
+    }
     
      
      
@@ -123,6 +160,7 @@ class Main {
         console.log('hello world')
         this.rotateImg()
         this.startCountdown("12:01:11")
+        this.changeProduct()
 
     }
 }

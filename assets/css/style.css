@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+button {
+    background-color: transparent;
+    border: 0;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -567,6 +572,12 @@ img.index__top-img {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.index__change-bg.active {
+    opacity: 1;
 }
 
 .index__change-img {
@@ -574,7 +585,107 @@ img.index__top-img {
     right: -23%;
     top: 50%;
     transform: translateY(-45%);
+    transition: .3s;
+    opacity: 0;
 }
+
+.index__change-img.active {
+    opacity: 1;
+}
+
+.index__change-left {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    margin-top: 55px;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.index__change-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.index__change-avaliation {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.index__change-span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1177FF;
+    margin-left: 25px;
+}
+
+.index__change-btns {
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.index__change-label {
+    display: block;
+    font-size: 20px;
+}
+
+.index__change-btn {
+    position: relative;
+}
+
+.index__change-btn.red {
+    margin-right: 20px;
+}
+
+.index__change-btn-icon {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.index__change-btn.active .index__change-btn-icon {
+    opacity: 1;
+}
+
+.index__change-value {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.index__change-price {
+    padding-left: 25px;
+    font-size: 90px;
+    line-height: 94px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+.index__change-price::before {
+    content: '$';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
 
   
 
@@ -620,6 +731,7 @@ footer {
 .footer-column ul li a {
     color: #fff !important;
     text-decoration: none;
+    
 }
 .footer-column ul li a:hover {
     text-decoration: underline;

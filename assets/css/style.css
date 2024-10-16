@@ -181,6 +181,9 @@ a {
     margin-right: 10px;
   }
   
+  .gustavo{
+    background-color: #1177FF;
+  }
 
 
 /* ======= INDEX ======== */
@@ -910,3 +913,4 @@ footer {
    transform: translate(-50%);
    top: 75px;
 }
+

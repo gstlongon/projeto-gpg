@@ -1,11 +1,10 @@
 # Projeto GPG
 # Desenvolvedores #
-1- Gustavo Lourenço <br>
-2- Gustavo Longon<br>
-3- Paulo Targa<br>
-4- Fellipe Augusto<br>
-5- Bruno Demetrio<br>
-6- Leonardo Caires<br>
+1- Gustavo Longon - 1966939<br>
+2- Paulo Targa - 1977908<br>
+3- Fellipe Augusto - 1982787<br>
+4- Bruno Demetrio - 1958545<br>
+5- Leonardo Caires - 1964468<br>
 
 Repositório voltado para fins acadêmicos 
 

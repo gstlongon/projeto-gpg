@@ -147,6 +147,32 @@ class Main {
 
 
     }
+
+    swiper() {
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            breakpoints: {
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                480: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                },
+                
+              },
+
+            spaceBetween: 10,
+          
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+            
+          });
+    }
     
      
      
@@ -161,6 +187,7 @@ class Main {
         this.rotateImg()
         this.startCountdown("12:01:11")
         this.changeProduct()
+        this.swiper()
 
     }
 }

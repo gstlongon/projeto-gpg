@@ -12,10 +12,10 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public IActionResult Login([FromBody] LoginModel loginModel)
+    public IActionResult Login([FromBody] User loginModel)
     {
 
-        var user = _userService.ValidateUser(loginModel.UsernameOrEmail, loginModel.Password);
+        var user = _userService.ValidateUser(loginModel.Email, loginModel.Password);
 
         if (user == null)
             return Unauthorized("Usuário ou senha inválidos.");
@@ -26,7 +26,6 @@ public class AuthController : ControllerBase
             User = new
             {
                 user.Id,
-                user.Username,
                 user.Email,
                 user.Role
             }

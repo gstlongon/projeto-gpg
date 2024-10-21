@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leoca\\source\\repos\\Cadastro\\Cadastro\\Cadastro.csproj": {}
+    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\Cadastro\\Cadastro\\Cadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leoca\\source\\repos\\Cadastro\\Cadastro\\Cadastro.csproj": {
+    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\Cadastro\\Cadastro\\Cadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leoca\\source\\repos\\Cadastro\\Cadastro\\Cadastro.csproj",
+        "projectUniqueName": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\Cadastro\\Cadastro\\Cadastro.csproj",
         "projectName": "Cadastro",
-        "projectPath": "C:\\Users\\leoca\\source\\repos\\Cadastro\\Cadastro\\Cadastro.csproj",
-        "packagesPath": "C:\\Users\\leoca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leoca\\source\\repos\\Cadastro\\Cadastro\\obj\\",
+        "projectPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\Cadastro\\Cadastro\\Cadastro.csproj",
+        "packagesPath": "C:\\Users\\Leonardo Newtec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\Cadastro\\Cadastro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leoca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leonardo Newtec\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,24 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[8.0.10, )"
             },
@@ -83,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -152,18 +152,23 @@ class Main {
         const swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             breakpoints: {
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 20
+                567: {
+                    slidesPerView: 1,
+                    setWrapperSize: true
                 },
-                480: {
-                  slidesPerView: 3,
-                  spaceBetween: 30
+                767: {
+                    slidesPerView: 2,
+                    setWrapperSize: true
                 },
+                1080: {
+                    slidesPerView: 3,
+                    setWrapperSize: true
+                },
+                
                 
               },
 
-            spaceBetween: 10,
+            spaceBetween: 30,
           
             navigation: {
               nextEl: '.swiper-button-next',

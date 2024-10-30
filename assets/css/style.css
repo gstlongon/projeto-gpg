@@ -871,7 +871,8 @@ img.index__top-img {
     background-color: transparent;
 }
 
-.swiper-button-prev.swiper-button-disabled svg path {
+.swiper-button-prev.swiper-button-disabled svg path,
+.swiper-button-next.swiper-button-disabled svg path  {
     fill: #B5B5B5;
 }
 

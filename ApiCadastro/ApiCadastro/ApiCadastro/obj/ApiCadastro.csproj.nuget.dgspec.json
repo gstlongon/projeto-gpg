@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {}
+    "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {
+    "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+        "projectUniqueName": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
         "projectName": "ApiCadastro",
-        "projectPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
-        "packagesPath": "C:\\Users\\Leonardo Newtec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
+        "projectPath": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+        "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Leonardo Newtec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -87,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

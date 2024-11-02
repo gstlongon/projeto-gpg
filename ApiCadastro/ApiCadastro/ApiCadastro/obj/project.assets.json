@@ -4177,19 +4177,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aula\\.nuget\\packages\\": {}
+    "C:\\Users\\leoca\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+      "projectUniqueName": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
       "projectName": "ApiCadastro",
-      "projectPath": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
-      "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aula\\Downloads\\projeto-gpg-main\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
+      "projectPath": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+      "packagesPath": "C:\\Users\\leoca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leoca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4209,6 +4209,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4257,7 +4262,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

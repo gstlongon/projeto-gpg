@@ -1,8 +1,8 @@
-﻿
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Security.Claims; 
 using ApiCadastro.Models;
 using ApiCadastro.Services;
 
@@ -10,17 +10,15 @@ namespace ApiCadastro.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] 
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public UserController(UserService userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
 
-        
         [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] UserDto userDto)
@@ -32,7 +30,6 @@ namespace ApiCadastro.Controllers
             return Ok(result);
         }
 
-    
         [AllowAnonymous]
         [HttpPost("authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] UserDto userDto)
@@ -43,6 +40,7 @@ namespace ApiCadastro.Controllers
 
             return Ok(new { Token = token });
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAll()
         {
@@ -59,5 +57,21 @@ namespace ApiCadastro.Controllers
 
             return Ok(user);
         }
+        [Authorize] 
+        [HttpPut("update-profile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UserUpdateDto userUpdateDto)
+        {
+           
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+            var result = await _userService.UpdateUserAsync(userId, userUpdateDto);
+
+   
+            if (result != "Perfil atualizado com sucesso.")
+                return BadRequest(result);
+
+            return Ok(result);
+        }
+
     }
 }

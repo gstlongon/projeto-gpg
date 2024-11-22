@@ -69,6 +69,31 @@
         public async Task<User> GetByIdAsync(int id) => await _userRepository.GetByIdAsync(id);
 
         public async Task<IEnumerable<User>> GetAllAsync() => await _userRepository.GetAllAsync();
-    }
 
+        public async Task<string> UpdateUserAsync(int userId, UserUpdateDto userUpdateDto)
+        {
+            var user = await _userRepository.GetByIdAsync(userId);
+            if (user == null)
+                return "Usuário não encontrado.";
+
+            user.Nome = userUpdateDto.Nome ?? user.Nome;
+            user.Sobrenome = userUpdateDto.Sobrenome ?? user.Sobrenome;
+            user.Email = userUpdateDto.Email ?? user.Email;
+            user.Telefone = userUpdateDto.Telefone ?? user.Telefone;
+            user.DataNascimento = userUpdateDto.DataNascimento ?? user.DataNascimento;
+            user.Endereco = userUpdateDto.Endereco ?? user.Endereco;
+            user.Cidade = userUpdateDto.Cidade ?? user.Cidade;
+            user.Estado = userUpdateDto.Estado ?? user.Estado;
+            user.CEP = userUpdateDto.CEP ?? user.CEP;
+
+            if (!string.IsNullOrWhiteSpace(userUpdateDto.FotoBase64))
+            {
+                user.Foto = Convert.FromBase64String(userUpdateDto.FotoBase64);
+            }
+
+            await _userRepository.UpdateAsync(user);
+
+            return "Usuário atualizado com sucesso.";
+        }
+    }
 }

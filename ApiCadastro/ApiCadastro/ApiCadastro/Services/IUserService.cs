@@ -5,11 +5,11 @@
     using ApiCadastro.Models;
 
     public interface IUserService
-    {
-        Task<string> RegisterAsync(UserDto userDto);
-        Task<string> AuthenticateAsync(UserDto userDto);
-        Task<User> GetByIdAsync(int id);
-        Task<IEnumerable<User>> GetAllAsync();
-    }
-
+{
+    Task<string> RegisterAsync(UserDto userDto);
+    Task<string> AuthenticateAsync(UserDto userDto);
+    Task<User> GetByIdAsync(int id);
+    Task<IEnumerable<User>> GetAllAsync();
+    Task<string> UpdateUserAsync(int userId, UserUpdateDto userUpdateDto);
+}
 }

@@ -14,6 +14,8 @@
         public string Cidade { get; set; }
         public string Estado { get; set; }
         public string CEP { get; set; }
+
+        public byte[]? Foto { get; set; }
         public string Role { get; set; } = "User"; 
     }
 }

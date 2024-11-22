@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {}
+    "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (3)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {
+    "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (3)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+        "projectUniqueName": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (3)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
         "projectName": "ApiCadastro",
-        "projectPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
-        "packagesPath": "C:\\Users\\Leonardo Newtec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo Newtec\\Downloads\\projeto-gpg-main (1)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
+        "projectPath": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (3)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\ApiCadastro.csproj",
+        "packagesPath": "C:\\Users\\leoca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leoca\\Downloads\\projeto-gpg-main (3)\\projeto-gpg-main\\ApiCadastro\\ApiCadastro\\ApiCadastro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Leonardo Newtec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leoca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

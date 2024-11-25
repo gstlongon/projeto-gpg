@@ -3,6 +3,7 @@ using Core.Repositories;
 using Core.Services;
 using Infrastructure.Repositories;
 using Infrastructure.Repositories.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -62,7 +63,7 @@ namespace Presentation
 
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IProductService, ProductService>();
-
+            builder.Services.AddScoped<IImageService, ImageService>();
 
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<ITokenService, TokenService>();

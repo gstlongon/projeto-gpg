@@ -6,8 +6,9 @@
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
+        public string? ImageUrl { get; set; }
 
-        private Product() { }
+        public Product() { }
 
         public Product(string id, string name, string description, double price)
         {

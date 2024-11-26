@@ -77,7 +77,6 @@ namespace Presentation
 
         private static void AuthenticationMiddleware(IHostApplicationBuilder builder)
         {
-            // Configuração de autenticação e autorização
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -92,6 +91,8 @@ namespace Presentation
                 });
             builder.Services.AddAuthorization();
         }
+
+
 
         private static void InitializeSwagger(WebApplication app)
         {
@@ -109,18 +110,33 @@ namespace Presentation
             AddControllersAndDependencies(builder);
             AuthenticationMiddleware(builder);
 
-            var app = builder.Build();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyPolicy",
+                    policy =>
+                    {
+                        policy.WithOrigins("http://127.0.0.1:5501")
+                              .AllowAnyHeader()
+                              .AllowAnyMethod()
+                              .AllowCredentials();
+                    });
+            });
+
+            var app = builder.Build(); 
+
+            app.UseCors("MyPolicy");
 
             if (app.Environment.IsDevelopment())
             {
-                // Inicialização do Swagger
                 InitializeSwagger(app);
             }
 
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.MapControllers();
 
             app.Run();
         }
+
     }
 }

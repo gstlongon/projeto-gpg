@@ -62,6 +62,41 @@ namespace Presentation.Controllers
             }
         }
 
+        [HttpPut("{ProductId}")]
+
+        public async Task<IActionResult> UpdateProduct(string productId, [FromBody] ProductDTO productDTO)
+        {
+            try
+            {
+                var updatedProduct = await _productService.UpdateProduct(
+                    productId,
+                    productDTO.Name,
+                    productDTO.Description,
+                    productDTO.Price
+                    );
+                return Ok(updatedProduct);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+        }
+
+        [HttpDelete("{ProductId}")]
+        public async Task<IActionResult> DeleteProduct(string productId)
+        {
+            try
+            {
+                await _productService.DeleteProduct(productId);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+        }
+
+
         [HttpPost("{ProductId}/UploadImage")]
         public async Task<ActionResult<string>> UploadImage(string ProductId, IFormFile file)
         {

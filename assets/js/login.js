@@ -4,7 +4,7 @@ class Login {
         if (this.token) {
             window.location.href = 'dashboard.html'; 
         }
-        
+
         this.init()
     }
 
@@ -75,52 +75,68 @@ class Login {
     async login() {
         const form = document.getElementById('loginForm');
     
-        form.addEventListener('submit', async function (event) {
-            event.preventDefault();
+        if (!form.dataset.listenerAdded) {
+            form.dataset.listenerAdded = true;
     
-            const formData = new FormData(this);
-            const data = {
-                email: formData.get('user'),
-                password: formData.get('password')
-            };
+            form.addEventListener('submit', async function (event) {
+                event.preventDefault();
     
-            try {
-                const response = await axios.post(
-                    'https://localhost:7119/api/Auth/signIn', 
-                    data,
-                    {
-                        headers: {
-                            'Content-Type': 'application/json', 
-                        }
-                    }
-                );
-    
-                const token = response.data;
-                console.log(token)
-                if (token) {
-                    sessionStorage.setItem('token', token);
-    
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Login realizado com sucesso!',
-                        text: 'Você será redirecionado.',
-                        confirmButtonText: 'OK'
-                    }).then(() => {
-                        window.location.href = '/dashboard.html'; 
-                    });
-                } else {
-                    throw new Error('Token não encontrado na resposta.');
-                }
-            } catch (error) {
                 Swal.fire({
-                    icon: 'error',
-                    title: 'Erro no login',
-                    text: error.response?.data?.message || 'Credenciais inválidas. Tente novamente.',
-                    confirmButtonText: 'OK'
+                    title: 'Aguarde...',
+                    text: 'Verificando credenciais',
+                    allowOutsideClick: false,
+                    didOpen: function () {
+                        Swal.showLoading();
+                    }
                 });
-            }
-        });
+    
+                const formData = new FormData(this);
+                const data = {
+                    email: formData.get('user'),
+                    password: formData.get('password')
+                };
+    
+                try {
+                    const response = await axios.post(
+                        'https://localhost:7119/api/Auth/signIn', 
+                        data,
+                        {
+                            headers: {
+                                'Content-Type': 'application/json', 
+                            }
+                        }
+                    );
+    
+                    const token = response.data;
+                    if (token) {
+                        sessionStorage.setItem('token', token);
+    
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Login realizado com sucesso!',
+                            text: 'Redirecionando para o dashboard...',
+                            timer: 2000, 
+                            showConfirmButton: false 
+                        });
+    
+                        setTimeout(() => {
+                            window.location.href = '/dashboard.html'; 
+                        }, 2000);
+                    } else {
+                        throw new Error('Token não encontrado na resposta.');
+                    }
+                } catch (error) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Erro no login',
+                        text: error.response?.data?.message || 'Credenciais inválidas. Tente novamente.',
+                        confirmButtonText: 'OK'
+                    });
+                }
+            });
+        }
     }
+    
     
     
      

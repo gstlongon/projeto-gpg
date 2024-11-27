@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script>
+         this.token = sessionStorage.getItem('token')
+        if (this.token) {
+            window.location.href = 'dashboard.html'; 
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT -->

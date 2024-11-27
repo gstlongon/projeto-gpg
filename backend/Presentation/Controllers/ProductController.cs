@@ -62,7 +62,7 @@ namespace Presentation.Controllers
             }
         }
 
-        [HttpPut("updade/{productId}")]
+        [HttpPut("update/{productId}")]
             
         public async Task<IActionResult> UpdateProduct(string productId, [FromBody] ProductDTO productDTO)
         {

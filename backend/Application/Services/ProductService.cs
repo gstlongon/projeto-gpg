@@ -75,7 +75,7 @@ namespace Application.Services
 
             string uploadedFileUrl = await _imageService.UploadImage(file, "products", productId);
 
-            product.ImageUrl = uploadedFileUrl;
+                product.ImageUrl = uploadedFileUrl;
 
             await _productRepository.UpdateProduct(product);
 

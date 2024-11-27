@@ -27,6 +27,9 @@ Este projeto foi desenvolvido para gerenciar usuários e produtos, garantindo um
 
 ---
 
+**[Assista ao vídeo demonstrativo](https://www.youtube.com/watch?v=wl8rE1WfIE0)
+**
+
 ## 🚀 Funcionalidades
 
 ### 🔑 **Autenticação de Usuários**

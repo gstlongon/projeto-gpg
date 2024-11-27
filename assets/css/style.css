@@ -284,7 +284,7 @@ label.form__label {
     align-items: center;
 }
 
-.dashboard__username {
+.dashboard__username-box {
     display: block;
     text-align: right;
     color: #FFF;
@@ -468,6 +468,72 @@ label.form__label {
 .dashboard__search-form .form__btn {
     max-width: 170px;
 }
+
+/* ======= DASHBOARD-PRODUCT ======== */
+
+.dashboard-product__btn {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    margin-top: 45px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(128, 0, 128, .2);
+    text-align: center;
+    font-weight: bold;
+}
+
+.dashboard-products {
+    margin-top: 40px;
+}
+
+.product__card {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.product__img-box {
+    width: 100%;
+    height: 150px;
+}
+
+.product__img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product__title {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.product__description {
+    margin-top: 10px;
+    color: #797979;
+}
+
+.product__price {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.product__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-container {
+    margin-top: 45px;
+}
+
 
 
 /* ======= HEADER ======== */

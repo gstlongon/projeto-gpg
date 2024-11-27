@@ -1,5 +1,10 @@
 class Login {
     constructor() {
+        this.token = sessionStorage.getItem('token')
+        if (this.token) {
+            window.location.href = 'dashboard.html'; 
+        }
+        
         this.init()
     }
 

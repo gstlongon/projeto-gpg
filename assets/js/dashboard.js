@@ -160,7 +160,8 @@ class Dashboard {
                             </div>
                             <h3 class="product__title">${product.name}</h3>
                             <p class="product__description">${product.description}</p>
-                            <p class="product__price">R$ ${product.price}</p>
+
+                            <p class="product__price">R$ ${product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                             <div class="product__buttons">
                                 <button class="product-update-btn" data-id="${product.id}" data-name="${product.name}" data-description="${product.description}" data-price="${product.price}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"><path d="M0,10.659v1.922A.408.408,0,0,0,.4,13H2.219a.386.386,0,0,0,.28-.123l7.493-7.92L7.612,2.441l-7.5,7.921A.432.432,0,0,0,0,10.659Z" fill="purple"/><path d="M8.341,1.431,10.651,3.88l1.124-1.192a.851.851,0,0,0,0-1.154L10.554.239a.739.739,0,0,0-1.088,0Z" fill="purple"/></svg>
@@ -376,7 +377,7 @@ class Dashboard {
     
             products.forEach(item => totalValue += item.price);
     
-            money.innerHTML = totalValue.toFixed(2);
+            money.innerHTML = totalValue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
             qtdProduct.innerHTML = products.length;
     
     
@@ -453,7 +454,6 @@ class Dashboard {
                         text: 'Os dados do usuário foram atualizados com sucesso.',
                         showConfirmButton: true
                     });
-                    this.setWelcome()
     
                 } catch (error) {
                     Swal.close();

@@ -145,7 +145,7 @@ a {
     position: absolute;
     left: -20%;
     bottom: -800px;
-    background-color: #FF7A11;
+    background-color: #800080;
     transform: rotate(-40deg);
 
 }
@@ -171,7 +171,7 @@ a {
 .logo__decor {
     width: 5px;
     height: 20px;
-    background-color: #FF7A11;
+    background-color: #800080;
 }
 
 .login__logo {
@@ -216,7 +216,7 @@ label.form__label {
 
 .form__input:focus,
 .form__input:focus-visible {
-    outline: 1px solid  #FF7A11;
+    outline: 1px solid  #800080;
 }
 
 .form__btn {
@@ -224,7 +224,7 @@ label.form__label {
     height: 45px;
     border-radius: 5px;
     border: none;
-    background-color: #FF7A11;
+    background-color: #800080;
     color: #FFF;
     font-weight: bold;
 }
@@ -261,7 +261,7 @@ label.form__label {
     height: 45px;
     border-radius: 5px;
     margin-top: 15px;
-    background-color: #FF7A11;
+    background-color: #800080;
     color: #FFF;
     border: 0;
 }

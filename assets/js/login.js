@@ -90,9 +90,10 @@ class Login {
                     }
                 );
     
-                const token = response;
+                const token = response.data;
+                console.log(token)
                 if (token) {
-                    sessionStorage.setItem('jwt', token);
+                    sessionStorage.setItem('token', token);
     
                     Swal.fire({
                         icon: 'success',

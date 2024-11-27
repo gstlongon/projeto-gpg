@@ -62,8 +62,8 @@ namespace Presentation.Controllers
             }
         }
 
-        [HttpPut("{ProductId}")]
-
+        [HttpPut("updade/{productId}")]
+            
         public async Task<IActionResult> UpdateProduct(string productId, [FromBody] ProductDTO productDTO)
         {
             try
@@ -82,7 +82,7 @@ namespace Presentation.Controllers
             }
         }
 
-        [HttpDelete("{ProductId}")]
+        [HttpDelete("delete/{productId}")]
         public async Task<IActionResult> DeleteProduct(string productId)
         {
             try

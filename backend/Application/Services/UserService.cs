@@ -60,7 +60,7 @@ namespace Application.Services
         public async Task<User> UpdateUser(string userId, string? name, string? email, string? phoneNumber, string? password,string street, string number, string city, string state, string postalcode, string country)
 
         {
-            var user = await GetUserOrThrowException(userId);
+            var user = await GetUserOrThrowException(userId);   
 
             user.Name = name;
             user.Email = email;
